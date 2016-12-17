@@ -1,7 +1,7 @@
 rm *.out
 rm *.err
 mpicc -std=c99 jac_2d.c
-nthreads=( 1 )
+nthreads=( 2 4 8 16 )
 kruns=10
 SUBMIT=mpisubmit
 sizes=( 18 34 66 130 258 514 1026 2050 )

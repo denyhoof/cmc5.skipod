@@ -1,7 +1,7 @@
 rm *.out
 rm *.err
 mpixlc_r jac_2d.c
-nthreads=( 1 )
+nthreads=( 2 4 8 16 32 64 )
 kruns=10
 SUBMIT=mpisubmit.bg
 sizes=( 18 34 66 130 258 514 1026 2050 )
