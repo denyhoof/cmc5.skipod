@@ -1,10 +1,10 @@
 rm *.out
 rm *.err
-mpicc -std=c99 jac_2d.c
-nthreads=( 1 )
+xlc_r -qsmp=omp jac_2d.c
+nthreads=( 2 4 8 16 )
 kruns=10
-SUBMIT=mpisubmit
-sizes=( 18 34 66 130 258 514 1026 2050 )
+SUBMIT=ompsubmit
+sizes=( 18 34 66 130 258 514 1026 2050 4098)
 for nthread in ${nthreads[@]}
 do
     for size in ${sizes[@]}

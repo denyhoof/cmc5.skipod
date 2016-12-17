@@ -2,7 +2,7 @@
 Parallel version of jac_2d algorithm
 
 # this branch
-default version
+omp version
 
 # about
 kde97@yandex.ru
